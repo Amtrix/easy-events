@@ -1,0 +1,49 @@
+/* CSS declarations go here */
+body {
+  background-color: #8aab96;
+
+  background-image: url(redox-01.texture.png);
+}
+
+#content-block {
+  width:910px;
+  height:100%;
+
+  text-align: left;
+  background-color: rgb(255,255,255);
+  display: inline-block;
+  /* for ie6/7: */
+  *display: inline;
+  zoom: 1; visibility: visible;
+}
+
+.content-border {
+  margin-top:2%;
+  padding: 15px;
+
+  border: solid;
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.4);
+
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+}
+
+@media only screen and (max-width: 910px) {
+  #content-block {
+    width: 95%;
+  }
+
+  .content-border {
+    margin-top: 3%;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+     box-shadow: none;
+
+     border-radius: 0px;
+     -moz-border-radius: 0px;
+     -webkit-border-radius: 0px;
+  }
+}
